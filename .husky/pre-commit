@@ -1,6 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx --help
+npm --version
+# npx --version
 
 echo "Cannot be reached..."
