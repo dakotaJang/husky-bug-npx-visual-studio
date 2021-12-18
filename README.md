@@ -1,4 +1,4 @@
-The problem appears to be related to Visual Studio and `npx` command.
+The problem appears to be related to Visual Studio and `npm`/`npx` command.
 
 # Used Environment
 
@@ -36,3 +36,10 @@ Should observe following error in Visual Studio on Git Changes panel (but not in
 /usr/bin/env: 'bash': No such file or directory
 husky - pre-commit hook exited with code 127 (error)
 ```
+
+# Suspected cause
+Following line found in `.husky/pre-commit` file.
+```
+npx --version
+```
+Same problem occurs with `npm --version` as well.
